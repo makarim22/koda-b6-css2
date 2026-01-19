@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="calculator">
-        <div class="display">
-            <div class="calculation">0</div>
+    <div class="grid grid-rows-[auto_repeat(5,1fr)] grid-cols-4 gap-2.5 w-80 bg-white rounded-lg shadow-xl">
+        <div class="col-span-4 p-5 bg-gray-200 text-right rounded-t-lg text-3xl text-gray-800">
+            <div class="col-span-4 p-5 bg-gray-200 text-right rounded-t-lg text-3xl text-gray-800">0</div>
         </div>
-        <div class="button">AC</div>
-        <div class="button">+/-</div>
-        <div class="button">%</div>
-        <div class="button operator">/</div>
-        <div class="button">7</div>
-        <div class="button">8</div>
-        <div class="button">9</div>
-        <div class="button operator">*</div>
-        <div class="button">4</div>
-        <div class="button">5</div>
-        <div class="button">6</div>
-        <div class="button operator">-</div>
-        <div class="button">1</div>
-        <div class="button">2</div>
-        <div class="button">3</div>
-        <div class="button operator">+</div>
-        <div class="button zero">0</div>
-        <div class="button">.</div>
-        <div class="button equals">=</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">AC</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">+/-</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">%</div>
+        <div class="button operator bg-blue-600 text-white hover:bg-blue-700">/</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">7</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">8</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">9</div>
+        <div class="button operator bg-blue-600 text-white hover:bg-blue-700">*</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">4</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">5</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">6</div>
+        <div class="button operator bg-blue-600 text-white hover:bg-blue-700">-</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">1</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">2</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">3</div>
+        <div class="button operator bg-blue-600 text-white hover:bg-blue-700">+</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">0</div>
+        <div class="button bg-gray-100 hover:bg-gray-200">.</div>
+        <div class="button equals bg-green-500 text-white col-span-2 hover:bg-green-600">=</div>
     </div>
 </body>
 </html>
